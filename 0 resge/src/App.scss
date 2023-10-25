@@ -1,0 +1,496 @@
+// * {
+//   border: 1px solid greenyellow;
+// }
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  //   max-width: 2000px;
+  // min-width: 800px;
+}
+
+header {
+  width: 90%;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Стилизация навигационного меню внутри header */
+header nav {
+  width: 90%;
+  // margin-top: 0px; /* Отступ сверху */
+  border-bottom: 1px solid #fff;
+  text-align: center;
+}
+
+/* Стилизация ссылок в навигационном меню */
+header nav a,
+.instagram > a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.a-element-fa-instagram {
+  margin-bottom: 10px;
+}
+
+/* Стилизация иконок в навигационном меню */
+header nav i {
+  font-size: 1.6em;
+}
+
+.fa-bars-staggered {
+  margin-bottom: 10px;
+}
+
+header nav .fa-cut::before {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+header nav li {
+  list-style-type: none;
+}
+
+header nav li:hover {
+  background: transparent;
+  color: #a2865d;
+  margin-bottom: -1px;
+  border-bottom: 1px solid #a2865d;
+}
+
+header nav .link-buttons {
+  padding: 0 19px 13px;
+  padding-bottom: 22px;
+}
+
+header nav .link-buttons:hover,
+header nav .fa-bars-staggered:hover,
+.a-element-fa-instagram:hover {
+  background: transparent;
+  color: #a2865d;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 auto;
+  margin-bottom: 15px;
+}
+
+.link-buttons.active {
+  /* Ваши стили для активной кнопки */
+  font-weight: bold;
+  color: #a2865d; /* Например, красный цвет текста */
+}
+
+
+// Footer \/
+
+// Home.tsx style \/
+.home-container,
+.main-content,
+.our-works-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.salon-info {
+  width: 100%;
+  height: 52em;
+  background-image: url("img\bgc.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  bottom: 96px;
+  color: #fff;
+  user-select: none;
+}
+
+.salon-info:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+.salon-info,
+.salon-info h1,
+.text-h1 {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.text-h1 {
+  font-size: 1.7em;
+  width: 450px;
+}
+
+.computer-mouse-and-text {
+  position: relative;
+  top: 250px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+
+  p {
+    margin-left: 10px;
+  }
+}
+
+.quote-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  margin-bottom: 2em;
+
+  p {
+    text-align: center;
+    margin: 10px;
+    line-height: 1.2;
+  }
+
+  i {
+    font-size: 3em;
+    transform: rotate(180deg);
+  }
+}
+
+.services-list {
+  max-width: 70%;
+  min-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.list-num-1 {
+  flex-basis: calc(33.33% - 5px);
+
+  margin-bottom: 2em;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  img {
+    max-width: 90%;
+    // min-width: 100px;
+    // height: 7em;
+    filter: hue-rotate(15deg);
+    padding-bottom: 10px;
+  }
+}
+
+.list-num-1::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 5px; 
+  bottom: 45px; 
+  left: 25px; 
+  border: 1px solid #6f5e47;
+}
+
+.logos-list {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0 70px;
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  img {
+    height: 50px;
+    filter: brightness(50%);
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+}
+
+.our-works-container {
+  font-size: 0.7em;
+
+  h1 {
+    margin: 5% auto 2%;
+  }
+
+  .buttons-category {
+    margin: 10px;
+  }
+}
+
+.buttons-category button {
+  font-size: 0.8em;
+  margin: 10px;
+  outline: none;
+  border: 0;
+  background: transparent;
+  color: white;
+}
+
+.buttons-category button:hover {
+  background: transparent;
+  color: #a2865d;
+  margin-bottom: -1px;
+  border-bottom: 1px solid #a2865d;
+}
+
+.our-works-photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 600px;
+  width: 80%;
+  min-width: 400px;
+
+  img {
+    // height: 12em;
+    max-width: 30%;
+    min-width: 10%;
+
+    filter: hue-rotate(15deg);
+    margin: 10px;
+  }
+  // img:last-child {
+  //   margin-right: 166px;
+  // }
+}
+
+footer {
+  width: 80%;
+  height: 10em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 3em 0 1em;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 0;
+
+  .fa-cut,
+  .fa-instagram {
+    font-size: 2em;
+  }
+
+  .contact p:first-child,
+  .opening-hours p:first-child,
+  .instagram p:first-child {
+    font-family: Garamond;
+    font-size: 1.4em;
+    padding-bottom: 0.5em;
+    color: #fff;
+  }
+}
+.contact p,
+.opening-hours p {
+  padding: 0.1em;
+  color: rgba(255, 255, 255, 0.52);
+  font-size: 0.88em;
+}
+
+.copyright {
+  margin-bottom: 1em;
+  font-size: 0.7em;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+// Style Cart.tsx \/
+.master-list-container,
+.price-container,
+.kontakt-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  // max-width: 2000px;
+  // min-width: 800px;
+
+  font-family: Garamond;
+
+  h1 {
+    margin: 30px;
+  }
+}
+
+.master-list-img {
+  max-width: 70%;
+  // min-width: 60%;
+}
+
+.master-list-img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.master-list-img-block {
+  flex-basis: calc(33.33% - 10px);
+  margin-bottom: 1em;
+  padding: 7px;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  max-width: 80%;
+  // border: 1px solid #6f5e47;
+
+  p {
+    text-align: left;
+    font-family: Garamond;
+  }
+}
+
+.master-list-img-block > p:last-child {
+  font-size: 0.9em;
+  color: rgb(176, 176, 176);
+}
+
+.master-list-img-block img {
+  width: 100%;
+  height: auto;
+  filter: hue-rotate(15deg);
+  margin-bottom: 10px;
+}
+
+.master-list-img-block::before {
+  content: "";
+  position: absolute;
+  top: -5px; /* смещение вверх на 10 пикселей */
+  right: -5px; /* смещение вправо на 10 пикселей */
+  bottom: 65px; /* смещение вниз на 10 пикселей */
+  left: 15px; /* смещение влево на 10 пикселей */
+  border: 1px solid #6f5e47; /* толщина и цвет границы */
+}
+
+// Style Price.tsx \/
+.price-card:nth-child(3) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.price-card {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin-bottom: 20px;
+
+  img {
+    height: 350px;
+    margin: 20px;
+  }
+
+  .price-card-text-block {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+
+  .price-card-text {
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    flex-direction: column;
+  }
+
+  .price-card-text > p:last-child {
+    font-size: 0.8em;
+    color: rgb(165, 165, 165);
+  }
+
+  .two-p-element {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .two-p-element > p:first-child {
+    font-size: 1.2em;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+// Style Map.tsx \/
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 500px;
+  font-family: Garamond;
+
+
+  iframe {
+    filter: opacity(70%);
+  }
+}
+
+.contakt-block-main {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+
+  .contact,
+  .opening-hours {
+    width: 100%;
+    // padding: 0;
+    padding-left: 5%;
+  }
+}
+
+.contact > p:first-child,
+.opening-hours > p:first-child {
+  color: #fff;
+  font-size: 1.2em;
+}

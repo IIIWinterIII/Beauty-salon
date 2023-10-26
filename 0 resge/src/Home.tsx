@@ -7,6 +7,9 @@ function Home() {
   const [selectedCategory, setSelectedCategory] =
     useState<PhotoCategory>("all");
 
+  
+
+
   const photos: Record<PhotoCategory, string[]> = {
     all: [
       "src/img/work-1.png",
@@ -20,9 +23,39 @@ function Home() {
       "src/img/work-9.png",
     ],
 
-    haircut: ["src/img/photo-1.jpg", "src/img/photo-1.jpg", "src/img/photo-1.jpg", "src/img/photo-1.jpg", "src/img/photo-1.jpg", "src/img/photo-1.jpg", "src/img/photo-1.jpg", "src/img/photo-1.jpg", "src/img/photo-1.jpg"],
-    manicure: ["src/img/photo-2.jpg", "src/img/photo-2.jpg", "src/img/photo-2.jpg", "src/img/photo-2.jpg", "src/img/photo-2.jpg", "src/img/photo-2.jpg", "src/img/photo-2.jpg", "src/img/photo-2.jpg", "src/img/photo-2.jpg"],
-    "make-up": ["src/img/photo-3.jpg", "src/img/photo-3.jpg", "src/img/photo-3.jpg", "src/img/photo-3.jpg", "src/img/photo-3.jpg", "src/img/photo-3.jpg", "src/img/photo-3.jpg", "src/img/photo-3.jpg", "src/img/photo-3.jpg"],
+    haircut: [
+      "src/img/photo-1.jpg",
+      "src/img/photo-1.jpg",
+      "src/img/photo-1.jpg",
+      "src/img/photo-1.jpg",
+      "src/img/photo-1.jpg",
+      "src/img/photo-1.jpg",
+      "src/img/photo-1.jpg",
+      "src/img/photo-1.jpg",
+      "src/img/photo-1.jpg",
+    ],
+    manicure: [
+      "src/img/photo-2.jpg",
+      "src/img/photo-2.jpg",
+      "src/img/photo-2.jpg",
+      "src/img/photo-2.jpg",
+      "src/img/photo-2.jpg",
+      "src/img/photo-2.jpg",
+      "src/img/photo-2.jpg",
+      "src/img/photo-2.jpg",
+      "src/img/photo-2.jpg",
+    ],
+    "make-up": [
+      "src/img/photo-3.jpg",
+      "src/img/photo-3.jpg",
+      "src/img/photo-3.jpg",
+      "src/img/photo-3.jpg",
+      "src/img/photo-3.jpg",
+      "src/img/photo-3.jpg",
+      "src/img/photo-3.jpg",
+      "src/img/photo-3.jpg",
+      "src/img/photo-3.jpg",
+    ],
   };
 
   const handleCategoryChange = (category: PhotoCategory): void => {
@@ -32,7 +65,7 @@ function Home() {
     <div className="home-container">
       <div className="salon-info">
         <div className="text-h1">
-        <h1>Салон красоты «Delote-Beauty» на Крестовском</h1>
+          <h1>Салон красоты «Delote-Beauty» на Крестовском</h1>
         </div>
         <div className="computer-mouse-and-text">
           <i className="fa-solid fa-computer-mouse"></i>
@@ -57,7 +90,7 @@ function Home() {
         </div>
         <div className="services-list">
           <div className="list-num-1">
-              <img
+            <img
               src="https://amiel.club/uploads/posts/2022-03/1647781651_5-amiel-club-p-parikmakherskie-uslugi-kartinki-5.jpg"
               alt="Парикмахер красит волосы кисточкой"
             />

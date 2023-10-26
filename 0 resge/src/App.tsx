@@ -1,23 +1,29 @@
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Routes
-} from "react-router-dom";
-// import { useState } from "react";
-import "./App.scss";
+import { Route, Link, Routes, useLocation } from "react-router-dom";
 import Cart from "./Cart";
 import Home from "./Home";
 import Price from "./Price";
 import Kontakt from "./Kontakt";
 import SidebarMenu from "./SidebarMenu";
+import "./App.scss";
+
+const activeTabs: {[k : string]: boolean} = {
+  '/': false,
+  '/cart': false,
+  '/price': false,
+  '/kontakt': false,
+}
 
 // Основной компонент приложения
 function App() {
+  const location = useLocation()
+  const pathname = location.pathname
+
+  for (const key in activeTabs) {
+    activeTabs[key] = false
+  }
+activeTabs[pathname] = true
 
   return (
-    
-    <Router>
       <div className="container">
         <header>
           <nav>
@@ -29,28 +35,23 @@ function App() {
                 <i className="fab fa-instagram"></i>
               </a>
               <li>
-                <Link
-                  to="/"
-                  className="link-buttons">
-                  Главная
+                <Link to="/" className={"link-buttons " + (activeTabs['/'] ? 'active' : '')}>
+                  Главная 
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/cart"
-                  className="link-buttons"
-                >
+                <Link to="/cart" className={"link-buttons " + (activeTabs['/cart'] ? 'active' : '')}>
                   Мастера
                 </Link>
               </li>
               <i className="fas fa-cut fa-rotate-270"></i>
               <li>
-                <Link to="/price" className="link-buttons">
+                <Link to="/price" className={"link-buttons " + (activeTabs['/price'] ? 'active' : '')}>
                   Цены
                 </Link>
               </li>
               <li>
-                <Link to="/kontakt" className="link-buttons">
+                <Link to="/kontakt" className={"link-buttons " + (activeTabs['/kontakt'] ? 'active' : '')}>
                   Контакты
                 </Link>
               </li>
@@ -96,7 +97,6 @@ function App() {
           <p>Copyright © 2017 - 2023</p>
         </div>
       </div>
-    </Router>
   );
 }
 

@@ -45,6 +45,7 @@ header nav a,
 /* Стилизация иконок в навигационном меню */
 header nav i {
   font-size: 1.6em;
+  transition: color 0.3s ease;
 }
 
 .fa-bars-staggered {
@@ -58,6 +59,7 @@ header nav .fa-cut::before {
 
 header nav li {
   list-style-type: none;
+  transition: border 0.3s ease;
 }
 
 header nav li:hover {
@@ -70,6 +72,7 @@ header nav li:hover {
 header nav .link-buttons {
   padding: 0 19px 13px;
   padding-bottom: 22px;
+  transition: color 0.3s ease;
 }
 
 header nav .link-buttons:hover,
@@ -90,8 +93,8 @@ header nav ul {
   /* Ваши стили для активной кнопки */
   font-weight: bold;
   color: #a2865d; /* Например, красный цвет текста */
+  border-bottom: 1px solid #a2865d;
 }
-
 
 // Footer \/
 
@@ -219,9 +222,9 @@ header nav ul {
   content: "";
   position: absolute;
   top: -5px;
-  right: 5px; 
-  bottom: 45px; 
-  left: 25px; 
+  right: 5px;
+  bottom: 45px;
+  left: 25px;
   border: 1px solid #6f5e47;
 }
 
@@ -244,12 +247,12 @@ header nav ul {
     -ms-user-select: none;
   }
 }
-
+// style "Наши работы"
 .our-works-container {
-  font-size: 0.7em;
-
+  width: 80%;
   h1 {
     margin: 5% auto 2%;
+    font-size: 2em;
   }
 
   .buttons-category {
@@ -259,11 +262,13 @@ header nav ul {
 
 .buttons-category button {
   font-size: 0.8em;
+  max-width: 90%;
   margin: 10px;
   outline: none;
   border: 0;
   background: transparent;
   color: white;
+  transition: color 0.3s ease, border 0.3s ease;
 }
 
 .buttons-category button:hover {
@@ -278,23 +283,20 @@ header nav ul {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 600px;
-  width: 80%;
+  max-width: 100%;
   min-width: 400px;
 
   img {
     // height: 12em;
-    max-width: 30%;
+    max-width: 25%;
     min-width: 10%;
 
     filter: hue-rotate(15deg);
     margin: 10px;
   }
-  // img:last-child {
-  //   margin-right: 166px;
-  // }
 }
 
+// FOOTER STYLE
 footer {
   width: 80%;
   height: 10em;
@@ -468,7 +470,6 @@ footer {
   width: 80%;
   height: 500px;
   font-family: Garamond;
-
 
   iframe {
     filter: opacity(70%);

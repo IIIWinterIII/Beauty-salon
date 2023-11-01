@@ -230,6 +230,7 @@ header nav ul {
     // height: 7em;
     filter: hue-rotate(15deg);
     padding-bottom: 10px;
+    border-radius: 5px;
   }
 }
 
@@ -241,13 +242,14 @@ header nav ul {
   bottom: 45px;
   left: 25px;
   border: 1px solid #6f5e47;
+  border-radius: 5px;
 }
 
 .logos-list {
   width: 80%;
   display: flex;
   justify-content: space-evenly;
-  margin: 20px 0 70px;
+  margin: 40px 0 70px;
   user-select: none;
   -webkit-user-drag: none;
   -moz-user-select: none;
@@ -313,6 +315,7 @@ header nav ul {
     min-width: 10%;
     filter: hue-rotate(15deg);
     margin: 10px;
+    border-radius: 10px;
   }
 }
 
@@ -325,7 +328,7 @@ footer {
   flex-direction: column;
   align-items: center;
   // align-items: flex-end;
-  margin: 3em 0 1em;
+  margin: 5em 0 1em;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
 }
@@ -544,7 +547,7 @@ footer {
   }
 
   header nav .link-buttons {
-    padding: 10px 25px 23px ;
+    padding: 10px 25px 23px;
     margin: 0px -5px;
   }
 
@@ -742,12 +745,35 @@ footer {
   }
 }
 
-// tablets
-// @media (min-width: 768px) and (max-width: 1023px) {
-//   /* Стили для планшетов */
-// }
-
 // PC monitors
-// @media (min-width: 1024px) {
-//   /* Стили для настольных компьютеров */
-// }
+@media (min-width: 1024px) {
+  .list-num-1::before {
+    top: -7px;
+    right: 10px;
+    bottom: 50px;
+    left: 35px;
+  }
+
+  .master-list-img-block {
+    p {
+      margin-left: 25px;
+    }
+
+    img {
+      width: 90%;
+    }
+  }
+
+  .master-list-img-block::before {
+    top: -6px;
+    right: 10px;
+    bottom: 68px;
+    left: 37px;
+  }
+
+  .price-card:nth-child(3) {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 35px;
+  }
+}

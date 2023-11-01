@@ -1,15 +1,16 @@
 import { useState } from "react";
 import "./App.scss";
+import ScrollToTopButton from "./ScrollToTopButton.tsx";
+
+// import anime from 'animejs';
 
 function Home() {
+  //==========================================================
+
   type PhotoCategory = "all" | "haircut" | "manicure" | "make-up";
 
   const [selectedCategory, setSelectedCategory] =
     useState<PhotoCategory>("all");
-
-  
-
-
   const photos: Record<PhotoCategory, string[]> = {
     all: [
       "src/img/work-1.png",
@@ -141,16 +142,39 @@ function Home() {
         <div className="our-works-container">
           <h1>Наши работы</h1>
           <div className="buttons-category">
-            <button onClick={() => handleCategoryChange("all")}>
+            <button
+              className={
+                "buttons-card " + (selectedCategory === "all" ? "active" : "")
+              }
+              onClick={() => handleCategoryChange("all")}
+            >
               Показать все
             </button>
-            <button onClick={() => handleCategoryChange("haircut")}>
+            <button
+              className={
+                "buttons-card " +
+                (selectedCategory === "haircut" ? "active" : "")
+              }
+              onClick={() => handleCategoryChange("haircut")}
+            >
               Парикмахерские услуги
             </button>
-            <button onClick={() => handleCategoryChange("manicure")}>
+            <button
+              className={
+                "buttons-card " +
+                (selectedCategory === "manicure" ? "active" : "")
+              }
+              onClick={() => handleCategoryChange("manicure")}
+            >
               Маникюр
             </button>
-            <button onClick={() => handleCategoryChange("make-up")}>
+            <button
+              className={
+                "buttons-card " +
+                (selectedCategory === "make-up" ? "active" : "")
+              }
+              onClick={() => handleCategoryChange("make-up")}
+            >
               Визаж
             </button>
           </div>
@@ -161,6 +185,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <ScrollToTopButton />
     </div>
   );
 }

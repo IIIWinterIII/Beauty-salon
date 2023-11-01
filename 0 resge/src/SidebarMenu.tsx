@@ -1,15 +1,19 @@
 import { useState } from "react";
 import "./SidebarMenu.scss";
 
+
 const SidebarMenu = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
+  const toggleMenu = () => { 
     setMenuOpen(!isMenuOpen);
   };
 
+  // Animejs
+
+
   return (
-    <div>
+    <div className="slidebar-Menu">
       <i className="fas solid fa-bars-staggered" onClick={toggleMenu}></i>
       <div className={`sidebar ${isMenuOpen ? "open" : ""}`}>
         {isMenuOpen && (

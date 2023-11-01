@@ -23,8 +23,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-top: -80px;
-  
+  margin-top: -40px;
 
   .fa-xmark {
     text-align: left;
@@ -42,6 +41,24 @@
 }
 
 /* Стили для иконки меню */
-.fa-bars-staggered, .fa-xmark {
+.fa-bars-staggered,
+.fa-xmark {
   cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    // background-color: #a2865d;
+    top: -30px;
+    height: 550px;
+  }
+
+  .sidebar.open {
+    right: -45px;
+  }
+
+  .menu {
+  margin-top: -10px;
+
+  }
 }

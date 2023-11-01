@@ -26,7 +26,7 @@ function Cart() {
             <p>Визажист</p>
           </div>
           <div className="master-list-img-block">
-            <img src="src\img\item (4).jpg" alt="" />
+            <img src="src\img\item (1).jpg" alt="" />
             <p>Елена Васильевна</p>
             <p>Визажист</p>
           </div>

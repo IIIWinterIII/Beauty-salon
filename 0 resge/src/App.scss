@@ -543,6 +543,11 @@ footer {
     }
   }
 
+  header nav .link-buttons {
+    padding: 10px 25px 23px ;
+    margin: 0px -5px;
+  }
+
   .li-hover.activemobile {
     background-color: rgba(0, 0, 0, 0.799);
     border: 1px solid #ffffff;
@@ -550,11 +555,11 @@ footer {
   }
 
   nav ul li:nth-child(-n + 3) {
-    transform: translateY(calc(90vh - -20px)) translateX(20px);
+    transform: translateY(calc(90vh - -15px)) translateX(20px);
   }
 
   nav ul li:nth-last-child(-n + 3) {
-    transform: translateY(calc(90vh - -20px)) translateX(-16px);
+    transform: translateY(calc(90vh - -15px)) translateX(-16px);
   }
 
   .a-element-fa-instagram {

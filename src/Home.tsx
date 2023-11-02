@@ -15,8 +15,8 @@ function Home() {
     all: [
       "../../src/img/work-1.png",
       "../src/img/work-2.png",
-      "src/img/work-3.png",
-      "src/img/work-4.png",
+      "/img/work-3.png",
+      "img/work-4.png",
       "src/img/work-5.png",
       "src/img/work-6.png",
       "src/img/work-7.png",

@@ -13,7 +13,7 @@ function Home() {
     useState<PhotoCategory>("all");
   const photos: Record<PhotoCategory, string[]> = {
     all: [
-      "src/img/work-1.png",
+      "..src/img/work-1.png",
       "src/img/work-2.png",
       "src/img/work-3.png",
       "src/img/work-4.png",

@@ -14,9 +14,9 @@ function Home() {
   const photos: Record<PhotoCategory, string[]> = {
     all: [
       "../../img/work-1.png",
-      "../../img/work-2.png",
-      "../../img/work-3.png",
-      "../../img/work-4.png",
+      "/img/work-2.png",
+      "../img/work-3.png",
+      "img/work-4.png",
       "../../img/work-5.png",
       "../../img/work-6.png",
       "../../img/work-7.png",

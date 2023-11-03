@@ -6,7 +6,7 @@ function Price() {
     <div className="price-container">
       <h1>Цены на услуги</h1>
       <div className="price-card">
-        <img src="src\img\image.jpg" alt="" />
+        <img src="../../img/image.jpg" alt="" />
         <div className="price-card-text-block">
           <div className="price-card-text">
             <div className="two-p-element">
@@ -39,7 +39,7 @@ function Price() {
         </div>
       </div>
       <div className="price-card">
-        <img src="src\img\image.jpg" alt="" />
+        <img src="../../img/image.jpg" alt="" />
         <div className="price-card-text-block">
           <div className="price-card-text">
             <div className="two-p-element">
@@ -72,7 +72,7 @@ function Price() {
         </div>
       </div>
       <div className="price-card">
-        <img src="src\img\image.jpg" alt="" />
+        <img src="../../img/image.jpg" alt="" />
         <div className="price-card-text-block">
           <div className="price-card-text">
             <div className="two-p-element">

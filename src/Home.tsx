@@ -13,49 +13,49 @@ function Home() {
     useState<PhotoCategory>("all");
   const photos: Record<PhotoCategory, string[]> = {
     all: [
-      "../../src/img/work-1.png",
-      "../src/img/work-2.png",
-      "../img/work-3.png",
-      "img/work-4.png",
-      "src/img/work-5.png",
-      "src/img/work-6.png",
-      "src/img/work-7.png",
-      "src/img/work-8.png",
-      "src/img/work-9.png",
+      "../../img/work-1.png",
+      "../../img/work-2.png",
+      "../../img/work-3.png",
+      "../../img/work-4.png",
+      "../../img/work-5.png",
+      "../../img/work-6.png",
+      "../../img/work-7.png",
+      "../../img/work-8.png",
+      "../../img/work-9.png",
     ],
 
     haircut: [
-      "src/img/photo-1.jpg",
-      "src/img/photo-1.jpg",
-      "src/img/photo-1.jpg",
-      "src/img/photo-1.jpg",
-      "src/img/photo-1.jpg",
-      "src/img/photo-1.jpg",
-      "src/img/photo-1.jpg",
-      "src/img/photo-1.jpg",
-      "src/img/photo-1.jpg",
+      "../../img/photo-1.jpg",
+      "../../img/photo-1.jpg",
+      "../../img/photo-1.jpg",
+      "../../img/photo-1.jpg",
+      "../../img/photo-1.jpg",
+      "../../img/photo-1.jpg",
+      "../../img/photo-1.jpg",
+      "../../img/photo-1.jpg",
+      "../../img/photo-1.jpg",
     ],
     manicure: [
-      "src/img/photo-2.jpg",
-      "src/img/photo-2.jpg",
-      "src/img/photo-2.jpg",
-      "src/img/photo-2.jpg",
-      "src/img/photo-2.jpg",
-      "src/img/photo-2.jpg",
-      "src/img/photo-2.jpg",
-      "src/img/photo-2.jpg",
-      "src/img/photo-2.jpg",
+      "../../img/photo-2.jpg",
+      "../../img/photo-2.jpg",
+      "../../img/photo-2.jpg",
+      "../../img/photo-2.jpg",
+      "../../img/photo-2.jpg",
+      "../../img/photo-2.jpg",
+      "../../img/photo-2.jpg",
+      "../../img/photo-2.jpg",
+      "../../img/photo-2.jpg",
     ],
     "make-up": [
-      "src/img/photo-3.jpg",
-      "src/img/photo-3.jpg",
-      "src/img/photo-3.jpg",
-      "src/img/photo-3.jpg",
-      "src/img/photo-3.jpg",
-      "src/img/photo-3.jpg",
-      "src/img/photo-3.jpg",
-      "src/img/photo-3.jpg",
-      "src/img/photo-3.jpg",
+      "../../img/photo-3.jpg",
+      "../../img/photo-3.jpg",
+      "../../img/photo-3.jpg",
+      "../../img/photo-3.jpg",
+      "../../img/photo-3.jpg",
+      "../../img/photo-3.jpg",
+      "../../img/photo-3.jpg",
+      "../../img/photo-3.jpg",
+      "../../img/photo-3.jpg",
     ],
   };
 
@@ -134,10 +134,10 @@ function Home() {
           </div>
         </div>
         <div className="logos-list">
-          <img src="src\logo\image 3 (Traced).png" alt="Kevin.Murphy" />
-          <img src="src\logo\image 4 (Traced).png" alt="Oribe" />
-          <img src="src\logo\image 5 (Traced).png" alt="Alterna" />
-          <img src="src\logo\image 6 (Traced).png" alt="Aldo Coppola" />
+          <img src="../../logo/image 3 (Traced).png" alt="Kevin.Murphy" />
+          <img src="../../logo/image 4 (Traced).png" alt="Oribe" />
+          <img src="../../logo/image 5 (Traced).png" alt="Alterna" />
+          <img src="../../logo/image 6 (Traced).png" alt="Aldo Coppola" />
         </div>
         <div className="our-works-container">
           <h1>Наши работы</h1>

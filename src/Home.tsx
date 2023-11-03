@@ -137,7 +137,7 @@ function Home() {
           <img src="../src/logo/image_3_Traced.png" alt="Kevin.Murphy" />
           <img src="./src/logo/image_4_Traced.png" alt="Oribe" />
           <img src="././logo/image_5_Traced.png" alt="Alterna" />
-          <img src="/src/logo/image_6_Traced.png" alt="Aldo Coppola" />
+          <img src="logo\image_6_Traced.png" alt="Aldo Coppola" />
         </div>
         <div className="our-works-container">
           <h1>Наши работы</h1>

@@ -11,32 +11,32 @@ function Cart() {
         </h1>
         <div className="master-list-img">
           <div className="master-list-img-block">
-            <img src="../../img/item (1).jpg" alt="" />
+            <img src="../../img/item(1).jpg" alt="" />
             <p>Елена Васильевна</p>
             <p>Визажист</p>
           </div>
           <div className="master-list-img-block">
-            <img src="../../img/item (2).jpg" alt="" />
+            <img src="../../img/item(2).jpg" alt="" />
             <p>Елена Васильевна</p>
             <p>Визажист</p>
           </div>
           <div className="master-list-img-block">
-            <img src="../../img/item (3).jpg" alt="" />
+            <img src="../../img/item(3).jpg" alt="" />
             <p>Елена Васильевна</p>
             <p>Визажист</p>
           </div>
           <div className="master-list-img-block">
-            <img src="../../img/item (1).jpg" alt="" />
+            <img src="../../img/item(1).jpg" alt="" />
             <p>Елена Васильевна</p>
             <p>Визажист</p>
           </div>
           <div className="master-list-img-block">
-            <img src="../../img/item (5).jpg" alt="" />
+            <img src="../../img/item(5).jpg" alt="" />
             <p>Елена Васильевна</p>
             <p>Визажист</p>
           </div>
           <div className="master-list-img-block">
-            <img src="../../img/item (6).jpg" alt="" />
+            <img src="../../img/item(6).jpg" alt="" />
             <p>Елена Васильевна</p>
             <p>Визажист</p>
           </div>

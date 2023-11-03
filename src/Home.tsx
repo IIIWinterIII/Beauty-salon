@@ -134,10 +134,10 @@ function Home() {
           </div>
         </div>
         <div className="logos-list">
-          <img src="../../logo/image-3-(Traced).png" alt="Kevin.Murphy" />
-          <img src="./logo/image-4-(Traced).png" alt="Oribe" />
-          <img src="././logo/image-5-(Traced).png" alt="Alterna" />
-          <img src="/logo/image-6-(Traced).png" alt="Aldo Coppola" />
+          <img src="../../logo/image_3_Traced.png" alt="Kevin.Murphy" />
+          <img src="./logo/image_4_Traced.png" alt="Oribe" />
+          <img src="././logo/image_5_Traced.png" alt="Alterna" />
+          <img src="/logo/image_6_Traced.png" alt="Aldo Coppola" />
         </div>
         <div className="our-works-container">
           <h1>Наши работы</h1>

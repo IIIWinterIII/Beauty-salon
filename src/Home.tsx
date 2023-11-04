@@ -2,8 +2,24 @@ import { useState } from "react";
 import "./App.scss";
 import ScrollToTopButton from "./ScrollToTopButton.tsx";
 import React from "react";
-
-// import anime from 'animejs';
+// logo
+import image_3 from "./logo/image_3_Traced.webp";
+import image_4 from "./logo/image_4_Traced.webp";
+import image_5 from "./logo/image_5_Traced.webp";
+import image_6 from "./logo/image_6_Traced.webp";
+// image
+import work_1 from "./img/work-1.jpeg";
+import work_2 from "./img/work-2.jpeg";
+import work_3 from "./img/work-3.jpeg";
+import work_4 from "./img/work-4.jpeg";
+import work_5 from "./img/work-5.jpeg";
+import work_6 from "./img/work-6.jpeg";
+import work_7 from "./img/work-7.jpeg";
+import work_8 from "./img/work-8.jpeg";
+import work_9 from "./img/work-9.jpeg";
+import photo_1 from "./img/photo-1.jpeg";
+import photo_2 from "./img/photo-2.jpeg";
+import photo_3 from "./img/photo-3.jpeg";
 
 function Home() {
   //==========================================================
@@ -12,51 +28,51 @@ function Home() {
 
   const [selectedCategory, setSelectedCategory] =
     useState<PhotoCategory>("all");
-  const photos: Record<PhotoCategory, string[]> = {
+  const photos: Record<PhotoCategory, { src: string; alt: string }[]> = {
     all: [
-      "src/img/work-1.png",
-      "src/img/work-2.png",
-      "src/img/work-3.png",
-      "src/img/work-4.png",
-      "src/img/work-5.png",
-      "src/img/work-6.png",
-      "src/img/work-7.png",
-      "src/img/work-8.png",
-      "src/img/work-9.png",
+      { src: work_1, alt: "photo of the hairdresser's work" },
+      { src: work_2, alt: "beautician's photo" },
+      { src: work_3, alt: "manicure photo" },
+      { src: work_4, alt: "photo of the hairdresser's work" },
+      { src: work_5, alt: "photo of the hairdresser's work" },
+      { src: work_6, alt: "beautician's photo" },
+      { src: work_7, alt: "manicure photo" },
+      { src: work_8, alt: "beautician's photo" },
+      { src: work_9, alt: "beautician's photo" },
     ],
 
     haircut: [
-      "src/img/photo-1.jpg",
-      "src/img/photo-1.jpg",
-      "src/img/photo-1.jpg",
-      "src/img/photo-1.jpg",
-      "src/img/photo-1.jpg",
-      "src/img/photo-1.jpg",
-      "src/img/photo-1.jpg",
-      "src/img/photo-1.jpg",
-      "src/img/photo-1.jpg",
+      { src: photo_1, alt: "fill-in picture" },
+      { src: photo_1, alt: "fill-in picture" },
+      { src: photo_1, alt: "fill-in picture" },
+      { src: photo_1, alt: "fill-in picture" },
+      { src: photo_1, alt: "fill-in picture" },
+      { src: photo_1, alt: "fill-in picture" },
+      { src: photo_1, alt: "fill-in picture" },
+      { src: photo_1, alt: "fill-in picture" },
+      { src: photo_1, alt: "fill-in picture" },
     ],
     manicure: [
-      "src/img/photo-2.jpg",
-      "src/img/photo-2.jpg",
-      "src/img/photo-2.jpg",
-      "src/img/photo-2.jpg",
-      "src/img/photo-2.jpg",
-      "src/img/photo-2.jpg",
-      "src/img/photo-2.jpg",
-      "src/img/photo-2.jpg",
-      "src/img/photo-2.jpg",
+      { src: photo_2, alt: "fill-in picture" },
+      { src: photo_2, alt: "fill-in picture" },
+      { src: photo_2, alt: "fill-in picture" },
+      { src: photo_2, alt: "fill-in picture" },
+      { src: photo_2, alt: "fill-in picture" },
+      { src: photo_2, alt: "fill-in picture" },
+      { src: photo_2, alt: "fill-in picture" },
+      { src: photo_2, alt: "fill-in picture" },
+      { src: photo_2, alt: "fill-in picture" },
     ],
     "make-up": [
-      "src/img/photo-3.jpg",
-      "src/img/photo-3.jpg",
-      "src/img/photo-3.jpg",
-      "src/img/photo-3.jpg",
-      "src/img/photo-3.jpg",
-      "src/img/photo-3.jpg",
-      "src/img/photo-3.jpg",
-      "src/img/photo-3.jpg",
-      "src/img/photo-3.jpg",
+      { src: photo_3, alt: "fill-in picture" },
+      { src: photo_3, alt: "fill-in picture" },
+      { src: photo_3, alt: "fill-in picture" },
+      { src: photo_3, alt: "fill-in picture" },
+      { src: photo_3, alt: "fill-in picture" },
+      { src: photo_3, alt: "fill-in picture" },
+      { src: photo_3, alt: "fill-in picture" },
+      { src: photo_3, alt: "fill-in picture" },
+      { src: photo_3, alt: "fill-in picture" },
     ],
   };
 
@@ -135,10 +151,10 @@ function Home() {
           </div>
         </div>
         <div className="logos-list">
-          <img src="src\logo\image_3_Traced.png" alt="Kevin.Murphy" />
-          <img src="src\logo\image_4_Traced.png" alt="Oribe" />
-          <img src="src\logo\image_5_Traced.png" alt="Alterna" />
-          <img src="src\logo\image_6_Traced.png" alt="Aldo Coppola" />
+          <img src={image_3} alt="Kevin.Murphy" />
+          <img src={image_4} alt="Oribe" />
+          <img src={image_5} alt="Alterna" />
+          <img src={image_6} alt="Aldo Coppola" />
         </div>
         <div className="our-works-container">
           <h1>Наши работы</h1>
@@ -181,7 +197,7 @@ function Home() {
           </div>
           <div className="our-works-photos">
             {photos[selectedCategory].map((photo, index) => (
-              <img key={index} src={photo} alt="" />
+              <img key={index} src={photo.src} alt={photo.alt} />
             ))}
           </div>
         </div>

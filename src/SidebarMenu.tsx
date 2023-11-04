@@ -1,6 +1,10 @@
 import { useState } from "react";
 import "./SidebarMenu.scss";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBarsStaggered, faXmark } from '@fortawesome/free-solid-svg-icons';
+import React from "react";
+
 
 const SidebarMenu = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -14,11 +18,11 @@ const SidebarMenu = () => {
 
   return (
     <div className="slidebar-Menu">
-      <i className="fas solid fa-bars-staggered" onClick={toggleMenu}></i>
+      <FontAwesomeIcon icon={faBarsStaggered} onClick={toggleMenu} className="fa-bars-staggered" />
       <div className={`sidebar ${isMenuOpen ? "open" : ""}`}>
         {isMenuOpen && (
           <div className="menu">
-            <i className="fa-solid fa-xmark"  onClick={toggleMenu}></i>
+            <FontAwesomeIcon icon={faXmark} onClick={toggleMenu} />  
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum,
               adipiscing amet in egestas sem dui, arcu faucibus scelerisque.

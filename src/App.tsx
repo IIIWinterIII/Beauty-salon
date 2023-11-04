@@ -7,6 +7,11 @@ import SidebarMenu from "./SidebarMenu.tsx";
 import "./App.scss";
 import React from "react";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faScissors } from '@fortawesome/free-solid-svg-icons';
+
+
 const activeTabs: { [k: string]: boolean } = {
   "/": false,
   "/cart": false,
@@ -33,7 +38,7 @@ function App() {
               className="a-element-fa-instagram"
               href="https://www.instagram.com/"
             >
-              <i className="fab fa-instagram"></i>
+              <FontAwesomeIcon icon={faInstagram} className="instagram" />
             </a>
             <li
               className={"li-hover " + (activeTabs["/"] ? "activemobile" : "")}
@@ -59,7 +64,7 @@ function App() {
                 Мастера
               </Link>
             </li>
-            <i className="fas fa-cut fa-rotate-270"></i>
+            <FontAwesomeIcon icon={faScissors} rotation={270} className="fa-cut" />
             <li
               className={
                 "li-hover " + (activeTabs["/price"] ? "activemobile" : "")
@@ -101,7 +106,7 @@ function App() {
       <footer>
         <div className="footer-content">
           <div>
-            <i className="fas fa-cut fa-rotate-270"></i>
+          <FontAwesomeIcon icon={faScissors} rotation={270} className="fa-cut" />
           </div>
           <div className="contact">
             <p>Контакты</p>
@@ -121,7 +126,7 @@ function App() {
               className="a-element-fa-instagram"
               href="https://www.instagram.com/"
             >
-              <i className="fab fa-instagram"></i>
+              <FontAwesomeIcon icon={faInstagram} className="instagram" />
             </a>
           </div>
         </div>

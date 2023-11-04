@@ -563,11 +563,11 @@ footer {
   }
 
   nav ul li:nth-child(-n + 3) {
-    transform: translateY(calc(85vh - -15px)) translateX(20px);
+    transform: translateY(calc(82vh - -15px)) translateX(20px);
   }
 
   nav ul li:nth-last-child(-n + 3) {
-    transform: translateY(calc(85vh - -15px)) translateX(-16px);
+    transform: translateY(calc(82vh - -15px)) translateX(-16px);
   }
 
   .a-element-fa-instagram {
@@ -586,7 +586,20 @@ footer {
     h1 {
       font-size: 1.5em;
       width: 300px;
+    margin-bottom: 90px;
+
     }
+
+    .computer-mouse-and-text {
+    margin-bottom: 250px;
+
+   
+    }
+
+    .computer-mouse-and-text >  p {
+      margin-bottom: 99px;
+  
+      }
   }
 
   .quote-container {

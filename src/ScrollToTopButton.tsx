@@ -1,3 +1,4 @@
+import React from "react";
 import "./ScrollToTopButtonStyle.scss";
 
 const ScrollToTopButton: React.FC = () => {

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.scss";
-import ScrollToTopButton from "./ScrollToTopButton.tsx";
+import ScrollToTopButton from "./ScrollToTopButton";
 
 // import anime from 'animejs';
 
@@ -13,49 +13,49 @@ function Home() {
     useState<PhotoCategory>("all");
   const photos: Record<PhotoCategory, string[]> = {
     all: [
-      "../../img/work-1.png",
-      "/img/work-2.png",
-      "../img/work-3.png",
-      "img/work-4.png",
-      "./img/work-5.png",
-      "././img/work-6.png",
-      "../../img/work-7.png",
-      "../../img/work-8.png",
-      "../../img/work-9.png",
+      "src/img/work-1.png",
+      "src/img/work-2.png",
+      "src/img/work-3.png",
+      "src/img/work-4.png",
+      "src/img/work-5.png",
+      "src/img/work-6.png",
+      "src/img/work-7.png",
+      "src/img/work-8.png",
+      "src/img/work-9.png",
     ],
 
     haircut: [
-      "../../img/photo-1.jpg",
-      "../../img/photo-1.jpg",
-      "../../img/photo-1.jpg",
-      "../../img/photo-1.jpg",
-      "../../img/photo-1.jpg",
-      "../../img/photo-1.jpg",
-      "../../img/photo-1.jpg",
-      "../../img/photo-1.jpg",
-      "../../img/photo-1.jpg",
+      "src/img/photo-1.jpg",
+      "src/img/photo-1.jpg",
+      "src/img/photo-1.jpg",
+      "src/img/photo-1.jpg",
+      "src/img/photo-1.jpg",
+      "src/img/photo-1.jpg",
+      "src/img/photo-1.jpg",
+      "src/img/photo-1.jpg",
+      "src/img/photo-1.jpg",
     ],
     manicure: [
-      "../../img/photo-2.jpg",
-      "../../img/photo-2.jpg",
-      "../../img/photo-2.jpg",
-      "../../img/photo-2.jpg",
-      "../../img/photo-2.jpg",
-      "../../img/photo-2.jpg",
-      "../../img/photo-2.jpg",
-      "../../img/photo-2.jpg",
-      "../../img/photo-2.jpg",
+      "src/img/photo-2.jpg",
+      "src/img/photo-2.jpg",
+      "src/img/photo-2.jpg",
+      "src/img/photo-2.jpg",
+      "src/img/photo-2.jpg",
+      "src/img/photo-2.jpg",
+      "src/img/photo-2.jpg",
+      "src/img/photo-2.jpg",
+      "src/img/photo-2.jpg",
     ],
     "make-up": [
-      "../../img/photo-3.jpg",
-      "../../img/photo-3.jpg",
-      "../../img/photo-3.jpg",
-      "../../img/photo-3.jpg",
-      "../../img/photo-3.jpg",
-      "../../img/photo-3.jpg",
-      "../../img/photo-3.jpg",
-      "../../img/photo-3.jpg",
-      "../../img/photo-3.jpg",
+      "src/img/photo-3.jpg",
+      "src/img/photo-3.jpg",
+      "src/img/photo-3.jpg",
+      "src/img/photo-3.jpg",
+      "src/img/photo-3.jpg",
+      "src/img/photo-3.jpg",
+      "src/img/photo-3.jpg",
+      "src/img/photo-3.jpg",
+      "src/img/photo-3.jpg",
     ],
   };
 
@@ -134,10 +134,10 @@ function Home() {
           </div>
         </div>
         <div className="logos-list">
-          <img src="..\logo\image_3_Traced.png" alt="Kevin.Murphy" />
-          <img src=".\logo\image_4_Traced.png" alt="Oribe" />
-          <img src="\src\logo\image_5_Traced.png" alt="Alterna" />
-          <img src=".\src\logo\image_6_Traced.png" alt="Aldo Coppola" />
+          <img src="src\logo\image_3_Traced.png" alt="Kevin.Murphy" />
+          <img src="src\logo\image_4_Traced.png" alt="Oribe" />
+          <img src="src\logo\image_5_Traced.png" alt="Alterna" />
+          <img src="src\logo\image_6_Traced.png" alt="Aldo Coppola" />
         </div>
         <div className="our-works-container">
           <h1>Наши работы</h1>

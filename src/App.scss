@@ -531,7 +531,7 @@ footer {
 // mobile
 @media (max-width: 767px) {
   .container {
-    margin-bottom: 50px;
+    margin-bottom: 120px;
     flex: 1;
   }
 
@@ -563,11 +563,11 @@ footer {
   }
 
   nav ul li:nth-child(-n + 3) {
-    transform: translateY(calc(90vh - -15px)) translateX(20px);
+    transform: translateY(calc(85vh - -15px)) translateX(20px);
   }
 
   nav ul li:nth-last-child(-n + 3) {
-    transform: translateY(calc(90vh - -15px)) translateX(-16px);
+    transform: translateY(calc(85vh - -15px)) translateX(-16px);
   }
 
   .a-element-fa-instagram {
@@ -628,7 +628,7 @@ footer {
   }
 
   .our-works-container {
-    width: 80%;
+    width: 83%;
     margin-bottom: 20px;
     h1 {
       margin: 5% auto 2%;

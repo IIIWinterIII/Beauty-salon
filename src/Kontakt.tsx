@@ -1,4 +1,6 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 // import { useState } from "react";
+import React from "react";
 import "./App.scss";
 
 function Kontakt() {

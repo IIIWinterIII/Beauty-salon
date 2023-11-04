@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.scss";
-import ScrollToTopButton from "./ScrollToTopButton";
+import ScrollToTopButton from "./ScrollToTopButton.tsx";
+import React from "react";
 
 // import anime from 'animejs';
 

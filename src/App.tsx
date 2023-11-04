@@ -1,10 +1,11 @@
-import { Route, Link, Routes, useLocation } from "react-router-dom";
-import Cart from "./Cart";
-import Home from "./Home";
-import Price from "./Price";
-import Kontakt from "./Kontakt";
-import SidebarMenu from "./SidebarMenu";
+import { Route, Link, Routes, useLocation } from "react-router-dom"; 
+import Cart from "./Cart.tsx";
+import Home from "./Home.tsx";
+import Price from "./Price.tsx";
+import Kontakt from "./Kontakt.tsx";
+import SidebarMenu from "./SidebarMenu.tsx";
 import "./App.scss";
+import React from "react";
 
 const activeTabs: { [k: string]: boolean } = {
   "/": false,

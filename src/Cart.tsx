@@ -1,4 +1,5 @@
 // import { useState } from 'react';
+import React from "react";
 import "./App.scss"
 
 // Компонент для отображения содержимого корзины

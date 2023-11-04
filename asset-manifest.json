@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/IIIWinterIII/Beauty-salon/static/css/main.740e9685.css",
+    "main.js": "/IIIWinterIII/Beauty-salon/static/js/main.da66015b.js",
+    "static/media/bgc.jpeg": "/IIIWinterIII/Beauty-salon/static/media/bgc.7c5a8bdce35e287b9464.jpeg",
+    "static/media/image.jpeg": "/IIIWinterIII/Beauty-salon/static/media/image.c932705e986b9a8f2dac.jpeg",
+    "static/media/work-7.jpeg": "/IIIWinterIII/Beauty-salon/static/media/work-7.4509c04081aa4a09d880.jpeg",
+    "static/media/item(1).jpeg": "/IIIWinterIII/Beauty-salon/static/media/item(1).762b65fff7c8951c8daa.jpeg",
+    "static/media/item(6).jpeg": "/IIIWinterIII/Beauty-salon/static/media/item(6).d2092baa66a69f173479.jpeg",
+    "static/media/item(2).jpeg": "/IIIWinterIII/Beauty-salon/static/media/item(2).749dd73073d71ac02838.jpeg",
+    "static/media/item(5).jpeg": "/IIIWinterIII/Beauty-salon/static/media/item(5).b29eb7e00541d484dda1.jpeg",
+    "static/media/work-1.jpeg": "/IIIWinterIII/Beauty-salon/static/media/work-1.79eb933bdadd8e4f2c17.jpeg",
+    "static/media/work-9.jpeg": "/IIIWinterIII/Beauty-salon/static/media/work-9.a6751082b03cf23356dc.jpeg",
+    "static/media/work-6.jpeg": "/IIIWinterIII/Beauty-salon/static/media/work-6.9548710e384b7b5d9666.jpeg",
+    "static/media/work-8.jpeg": "/IIIWinterIII/Beauty-salon/static/media/work-8.0f7561e1ae53d02f260c.jpeg",
+    "static/media/work-5.jpeg": "/IIIWinterIII/Beauty-salon/static/media/work-5.9ad872712c22e797d353.jpeg",
+    "static/media/work-2.jpeg": "/IIIWinterIII/Beauty-salon/static/media/work-2.394dcb5ff7b48170e630.jpeg",
+    "static/media/work-3.jpeg": "/IIIWinterIII/Beauty-salon/static/media/work-3.2a47991c0fb1aa994b99.jpeg",
+    "static/media/item(3).jpeg": "/IIIWinterIII/Beauty-salon/static/media/item(3).6c4023874f3d0d2721ab.jpeg",
+    "static/media/item(4).jpeg": "/IIIWinterIII/Beauty-salon/static/media/item(4).6c4023874f3d0d2721ab.jpeg",
+    "static/media/work-4.jpeg": "/IIIWinterIII/Beauty-salon/static/media/work-4.cee1389eb80c643ddac5.jpeg",
+    "static/media/photo-3.jpeg": "/IIIWinterIII/Beauty-salon/static/media/photo-3.2a1b310e8b664065cd14.jpeg",
+    "static/media/photo-1.jpeg": "/IIIWinterIII/Beauty-salon/static/media/photo-1.6e21282de4aadebd3a20.jpeg",
+    "static/media/photo-2.jpeg": "/IIIWinterIII/Beauty-salon/static/media/photo-2.56a6992d493be493bd0d.jpeg",
+    "static/media/image_4_Traced.webp": "/IIIWinterIII/Beauty-salon/static/media/image_4_Traced.f499e24c2e5a9fc0e213.webp",
+    "static/media/image_6_Traced.webp": "/IIIWinterIII/Beauty-salon/static/media/image_6_Traced.3e344491d204d0bfba2c.webp",
+    "static/media/image_5_Traced.webp": "/IIIWinterIII/Beauty-salon/static/media/image_5_Traced.923b4c0780ac4a162862.webp",
+    "static/media/image_3_Traced.webp": "/IIIWinterIII/Beauty-salon/static/media/image_3_Traced.94568a5b5b130fc974de.webp",
+    "index.html": "/IIIWinterIII/Beauty-salon/index.html",
+    "main.740e9685.css.map": "/IIIWinterIII/Beauty-salon/static/css/main.740e9685.css.map",
+    "main.da66015b.js.map": "/IIIWinterIII/Beauty-salon/static/js/main.da66015b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.740e9685.css",
+    "static/js/main.da66015b.js"
+  ]
+}

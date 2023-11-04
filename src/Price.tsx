@@ -1,12 +1,16 @@
 // import { useState } from "react";
+import React from "react";
 import "./App.scss";
+
+// img
+import image from "./img/image.jpeg";
 
 function Price() {
   return (
     <div className="price-container">
       <h1>Цены на услуги</h1>
       <div className="price-card">
-        <img src="src/img/image.jpg" alt="" />
+        <img src={image} alt="hairdressing services" />
         <div className="price-card-text-block">
           <div className="price-card-text">
             <div className="two-p-element">
@@ -39,7 +43,7 @@ function Price() {
         </div>
       </div>
       <div className="price-card">
-        <img src="src/img/image.jpg" alt="" />
+        <img src={image} alt="hairdressing services" />
         <div className="price-card-text-block">
           <div className="price-card-text">
             <div className="two-p-element">
@@ -72,7 +76,7 @@ function Price() {
         </div>
       </div>
       <div className="price-card">
-        <img src="src/img/image.jpg" alt="" />
+        <img src={image} alt="hairdressing services" />
         <div className="price-card-text-block">
           <div className="price-card-text">
             <div className="two-p-element">

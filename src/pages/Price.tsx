@@ -1,6 +1,6 @@
 // import { useState } from "react";
 import React from "react";
-import "./App.scss";
+import "../styles/pages/Price.scss";
 
 // img
 import image from "./img/image.jpeg";

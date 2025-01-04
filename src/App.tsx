@@ -10,7 +10,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faScissors } from '@fortawesome/free-solid-svg-icons';
-
+ 
 
 const activeTabs: { [k: string]: boolean } = {
   "/": false,
